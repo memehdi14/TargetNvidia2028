@@ -501,7 +501,7 @@ export const planData = {
     {
       id: "phase-3",
       title: "Phase 3: Deep Learning & Specialization",
-      subtitle: "Aug 2026 - Dec 2026 (1hr/day = 7hr/week)",
+      subtitle: "Aug 2026 - Dec 2026 (1hr/day + 2hrs weekend for CUDA/Kaggle)",
       months: [
         {
           id: "aug-2026",
@@ -652,15 +652,17 @@ export const planData = {
             {
               id: "oct-26-w1",
               title: "Week 1: Oct 1-7",
-              focus: "Attention Mechanism",
-              hours: 7,
-              depth: "🔴 Expert",
-              depthCheck: "Compute attention(Q,K,V) by hand. Explain softmax over keys.",
-              reference: "jalammar.github.io/illustrated-transformer/",
+              focus: "Attention Mechanism + CUDA Intro (Weekend)",
+              hours: 9,
+              depth: "🔴 Expert (Attention) + 🟢 Awareness (CUDA)",
+              depthCheck: "Compute attention(Q,K,V) by hand. Explain why GPUs beat CPUs for DL.",
+              reference: "jalammar.github.io/illustrated-transformer/ + docs.nvidia.com/cuda/",
               tasks: [
                 "Read: Illustrated Transformer (Part 1 - Attention)",
                 "Code: Implement scaled dot-product attention from scratch",
                 "Practice: Trace attention computation by hand",
+                "Weekend (2hrs): Read CUDA intro - threads vs blocks concept",
+                "Weekend: Understand why GPUs parallelize better than CPUs",
                 "LeetCode: Coin Change (#322)",
                 "LeetCode: Longest Increasing Subsequence (#300)"
               ]
@@ -668,15 +670,17 @@ export const planData = {
             {
               id: "oct-26-w2",
               title: "Week 2: Oct 8-14",
-              focus: "Self-Attention & Multi-Head",
-              hours: 7,
-              depth: "🔴 Expert",
-              depthCheck: "Why multiple heads? How are they combined? What's d_k scaling for?",
-              reference: "jalammar.github.io/illustrated-transformer/",
+              focus: "Self-Attention & Multi-Head + CUDA Memory (Weekend)",
+              hours: 9,
+              depth: "🔴 Expert (Attention) + 🟢 Awareness (CUDA)",
+              depthCheck: "Why multiple heads? Explain global vs shared memory in CUDA.",
+              reference: "jalammar.github.io/illustrated-transformer/ + CUDA docs",
               tasks: [
                 "Read: Illustrated Transformer (Part 2 - Multi-Head)",
                 "Code: Implement multi-head attention",
                 "Code: Visualize attention weights",
+                "Weekend (2hrs): CUDA memory hierarchy (global, shared, local)",
+                "Weekend: Understand how PyTorch uses CUDA under the hood",
                 "LeetCode: Word Break (#139)",
                 "LeetCode: Decode Ways (#91)"
               ]
@@ -684,15 +688,17 @@ export const planData = {
             {
               id: "oct-26-w3",
               title: "Week 3: Oct 15-21",
-              focus: "Full Transformer Architecture",
-              hours: 7,
-              depth: "🟡 Working",
+              focus: "Full Transformer Architecture + Kaggle Setup (Weekend)",
+              hours: 9,
+              depth: "🟡 Working (Transformer) + Kaggle Prep",
               depthCheck: "Explain encoder vs decoder stack, positional encoding, layer norm placement",
-              reference: "nlp.seas.harvard.edu/2018/04/03/attention.html",
+              reference: "nlp.seas.harvard.edu/2018/04/03/attention.html + Kaggle",
               tasks: [
                 "Read: Annotated Transformer (complete)",
                 "Code: Implement transformer encoder block",
                 "Code: Add positional encoding",
+                "Weekend (2hrs): Pick ONE image-based Kaggle competition",
+                "Weekend: Set up experiment tracking notebook",
                 "LeetCode: Unique Paths (#62)",
                 "LeetCode: Jump Game (#55)"
               ]
@@ -700,15 +706,17 @@ export const planData = {
             {
               id: "oct-26-w4",
               title: "Week 4: Oct 22-28",
-              focus: "BERT & HuggingFace",
-              hours: 7,
-              depth: "🟡 Working",
+              focus: "BERT & HuggingFace + Kaggle Baseline (Weekend)",
+              hours: 9,
+              depth: "🟡 Working (BERT) + Kaggle Project",
               depthCheck: "Explain BERT's pre-training tasks (MLM, NSP) and fine-tuning process",
-              reference: "huggingface.co/docs/transformers/",
+              reference: "huggingface.co/docs/transformers/ + Kaggle",
               tasks: [
                 "Read: HuggingFace Transformers quick tour",
                 "Code: Load pre-trained BERT",
                 "Code: Fine-tune BERT for text classification",
+                "Weekend (2hrs): Kaggle - Build baseline CNN model",
+                "Weekend: Log first experiments with metrics",
                 "LeetCode: House Robber (#198)",
                 "LeetCode: House Robber II (#213)",
                 "Milestone: 125+ LeetCode"
@@ -723,60 +731,68 @@ export const planData = {
             {
               id: "nov-26-w1",
               title: "Week 1: Nov 1-7",
-              focus: "NVIDIA DL Certificate - Day 1-2",
-              hours: 16,
-              depth: "Certificate",
-              depthCheck: "N/A - Take leave, complete intensive course",
-              reference: "nvidia.com/en-us/training/",
+              focus: "NVIDIA DL Certificate - Day 1-2 + CUDA Review (Weekend)",
+              hours: 18,
+              depth: "Certificate + 🟢 CUDA Awareness",
+              depthCheck: "N/A - Take leave, complete intensive course + review CUDA basics",
+              reference: "nvidia.com/en-us/training/ + CUDA Programming Guide",
               tasks: [
                 "Take sick leave from internship",
                 "NVIDIA DLI: Module 1-2",
-                "NVIDIA DLI: Module 3-4"
+                "NVIDIA DLI: Module 3-4",
+                "Weekend (2hrs): Review CUDA concepts from Oct",
+                "Weekend: Connect CUDA knowledge to NVIDIA DLI content"
               ]
             },
             {
               id: "nov-26-w2",
               title: "Week 2: Nov 8-14",
-              focus: "NVIDIA DL Certificate - Complete",
-              hours: 24,
-              depth: "Certificate",
-              depthCheck: "N/A - Complete and claim",
-              reference: "nvidia.com/en-us/training/",
+              focus: "NVIDIA DL Certificate - Complete + Kaggle Experiments (Weekend)",
+              hours: 26,
+              depth: "Certificate + Kaggle Work",
+              depthCheck: "N/A - Complete cert and run Kaggle experiments",
+              reference: "nvidia.com/en-us/training/ + Kaggle",
               tasks: [
                 "NVIDIA DLI: Remaining modules",
                 "NVIDIA DLI: Final assessment",
-                "Claim: NVIDIA Fundamentals of Deep Learning Certificate"
+                "Claim: NVIDIA Fundamentals of Deep Learning Certificate",
+                "Weekend (2hrs): Kaggle - Try ResNet architecture",
+                "Weekend: Compare CNN vs ResNet performance"
               ]
             },
             {
               id: "nov-26-w3",
               title: "Week 3: Nov 15-21",
-              focus: "Dynamic Programming LeetCode",
-              hours: 7,
-              depth: "🔴 Expert",
+              focus: "Dynamic Programming LeetCode + Kaggle Error Analysis (Weekend)",
+              hours: 9,
+              depth: "🔴 Expert (DP) + Kaggle Analysis",
               depthCheck: "Recognize DP patterns: 1D, 2D, LCS, knapsack variants",
-              reference: "neetcode.io/roadmap",
+              reference: "neetcode.io/roadmap + Kaggle notebook",
               tasks: [
                 "Solve: Climbing Stairs (#70)",
                 "Solve: Coin Change (#322)",
                 "Solve: Longest Common Subsequence (#1143)",
                 "Solve: Edit Distance (#72)",
-                "Solve: Distinct Subsequences (#115)"
+                "Solve: Distinct Subsequences (#115)",
+                "Weekend (2hrs): Kaggle - Error analysis on failed predictions",
+                "Weekend: Document experiment insights"
               ]
             },
             {
               id: "nov-26-w4",
               title: "Week 4: Nov 22-28",
-              focus: "More DP + Graphs",
-              hours: 7,
-              depth: "🔴 Expert",
+              focus: "More DP + Graphs + Kaggle Wrap-up (Weekend)",
+              hours: 9,
+              depth: "🔴 Expert (DSA) + Kaggle Final",
               depthCheck: "Can you solve 2D DP problems and graph traversals confidently?",
-              reference: "neetcode.io/roadmap",
+              reference: "neetcode.io/roadmap + Kaggle",
               tasks: [
                 "Solve: Maximum Product Subarray (#152)",
                 "Solve: Partition Equal Subset Sum (#416)",
                 "Solve: Network Delay Time (#743)",
                 "Solve: Cheapest Flights K Stops (#787)",
+                "Weekend (2hrs): Kaggle - Finalize submission",
+                "Weekend: Write Kaggle notebook summary with learnings",
                 "Milestone: 145+ LeetCode"
               ]
             }
@@ -789,15 +805,17 @@ export const planData = {
             {
               id: "dec-26-w1",
               title: "Week 1: Dec 1-7",
-              focus: "Transformer Project - Fine-tune BERT",
-              hours: 7,
-              depth: "Project",
+              focus: "Transformer Project - Fine-tune BERT + Kaggle Documentation (Weekend)",
+              hours: 9,
+              depth: "Project + Kaggle Wrap-up",
               depthCheck: "Full pipeline: load pretrained → fine-tune → evaluate → deploy",
-              reference: "HuggingFace Hub",
+              reference: "HuggingFace Hub + Kaggle notebook",
               tasks: [
                 "Code: Pick text classification task",
                 "Code: Load and preprocess dataset",
                 "Code: Fine-tune BERT/DistilBERT",
+                "Weekend (2hrs): Kaggle - Write comprehensive notebook summary",
+                "Weekend: Document all experiments and learnings",
                 "LeetCode: Swim in Rising Water (#778)",
                 "LeetCode: Reconstruct Itinerary (#332)"
               ]
@@ -857,7 +875,7 @@ export const planData = {
     {
       id: "phase-4",
       title: "Phase 4: Final Push",
-      subtitle: "Jan 2027 - Apr 2027 (1hr/day)",
+      subtitle: "Jan 2027 - Apr 2027 (1hr/day + 2hrs weekend for C++/Systems)",
       months: [
         {
           id: "jan-2027",
@@ -937,29 +955,33 @@ export const planData = {
             {
               id: "feb-27-w1",
               title: "Week 1: Feb 1-7",
-              focus: "Multi-Model Project Complete",
-              hours: 7,
-              depth: "Project",
+              focus: "Multi-Model Project Complete + C++ Intro (Weekend)",
+              hours: 9,
+              depth: "Project + 🟢 C++ Awareness",
               depthCheck: "Full analysis with charts, metrics, conclusions",
-              reference: "GitHub final push",
+              reference: "GitHub final push + learncpp.com",
               tasks: [
                 "Code: Create comparison charts/tables",
                 "Code: Write detailed analysis",
                 "GitHub: Push with comprehensive README",
+                "Weekend (2hrs): C++ basics - variables, types, syntax",
+                "Weekend: Understand pointers and memory concepts",
                 "Milestone: 5th major project complete"
               ]
             },
             {
               id: "feb-27-w2",
               title: "Week 2: Feb 8-14",
-              focus: "ML System Design Intro",
-              hours: 7,
-              depth: "🟡 Working",
+              focus: "ML System Design Intro + C++ Memory (Weekend)",
+              hours: 9,
+              depth: "🟡 Working (System Design) + 🟢 C++",
               depthCheck: "Explain end-to-end ML system: data → train → serve → monitor",
-              reference: "Chip Huyen - Designing ML Systems",
+              reference: "Chip Huyen - Designing ML Systems + C++ tutorials",
               tasks: [
                 "Read: Chip Huyen book - Chapter 1-2",
                 "Practice: Design a simple RecSys on paper",
+                "Weekend (2hrs): C++ memory - stack vs heap",
+                "Weekend: Understand references vs pointers",
                 "LeetCode: Surrounded Regions (#130)",
                 "LeetCode: Word Ladder (#127)"
               ]
@@ -967,15 +989,17 @@ export const planData = {
             {
               id: "feb-27-w3",
               title: "Week 3: Feb 15-21",
-              focus: "ML System Design Practice",
-              hours: 7,
-              depth: "🟡 Working",
+              focus: "ML System Design Practice + PyTorch Internals (Weekend)",
+              hours: 9,
+              depth: "🟡 Working (System Design) + 🟢 PyTorch",
               depthCheck: "Can you design image search or recommendation system?",
-              reference: "github.com/chiphuyen/machine-learning-systems-design",
+              reference: "github.com/chiphuyen/machine-learning-systems-design + PyTorch docs",
               tasks: [
                 "Read: ML System Design GitHub guide",
                 "Practice: Design image search system",
                 "Practice: Design fraud detection system",
+                "Weekend (2hrs): How PyTorch uses C++ backends (ATen)",
+                "Weekend: Explore PyTorch C++ extension basics",
                 "LeetCode: Minimum Height Trees (#310)",
                 "LeetCode: Evaluate Division (#399)"
               ]
@@ -983,16 +1007,18 @@ export const planData = {
             {
               id: "feb-27-w4",
               title: "Week 4: Feb 22-28",
-              focus: "Hard LeetCode Prep",
-              hours: 7,
-              depth: "🔴 Expert",
+              focus: "Hard LeetCode Prep + PyTorch CUDA Connection (Weekend)",
+              hours: 9,
+              depth: "🔴 Expert (LC) + 🟢 Systems",
               depthCheck: "Can you approach Hard problems systematically?",
-              reference: "NeetCode Hard playlist",
+              reference: "NeetCode Hard playlist + PyTorch docs",
               tasks: [
                 "Solve: Median of Two Sorted Arrays (#4)",
                 "Solve: Merge K Sorted Lists (#23)",
                 "Solve: Trapping Rain Water (#42)",
                 "Solve: N-Queens (#51)",
+                "Weekend (2hrs): How PyTorch tensors connect to CUDA",
+                "Weekend: Understand .to('cuda') under the hood",
                 "Milestone: 185+ LeetCode"
               ]
             }
@@ -1005,29 +1031,33 @@ export const planData = {
             {
               id: "mar-27-w1",
               title: "Week 1: Mar 1-7",
-              focus: "More Hard LeetCode",
-              hours: 7,
-              depth: "🔴 Expert",
+              focus: "More Hard LeetCode + C++ Review (Weekend)",
+              hours: 9,
+              depth: "🔴 Expert (LC) + 🟢 C++ Review",
               depthCheck: "Solve Hard problems in 45-60 mins",
-              reference: "NeetCode Hard playlist",
+              reference: "NeetCode Hard playlist + C++ notes",
               tasks: [
                 "Solve: Longest Valid Parentheses (#32)",
                 "Solve: Wildcard Matching (#44)",
                 "Solve: Word Break II (#140)",
-                "Solve: Burst Balloons (#312)"
+                "Solve: Burst Balloons (#312)",
+                "Weekend (2hrs): Review all C++ concepts from Feb",
+                "Weekend: Practice explaining memory management"
               ]
             },
             {
               id: "mar-27-w2",
               title: "Week 2: Mar 8-14",
-              focus: "Mock Interviews - Technical",
-              hours: 7,
-              depth: "Interview Prep",
+              focus: "Mock Interviews - Technical + Systems Review (Weekend)",
+              hours: 9,
+              depth: "Interview Prep + 🟢 Systems",
               depthCheck: "Communicate solution clearly while coding",
-              reference: "pramp.com or interviewing.io",
+              reference: "pramp.com or interviewing.io + CUDA/C++ notes",
               tasks: [
                 "Complete: 2 Pramp mock interviews",
                 "Review: Feedback and improve",
+                "Weekend (2hrs): Review CUDA concepts from Oct-Nov",
+                "Weekend: Prepare to answer 'Why NVIDIA?' with CUDA knowledge",
                 "LeetCode: Regular Expression Matching (#10)",
                 "LeetCode: Edit Distance (#72)"
               ]
